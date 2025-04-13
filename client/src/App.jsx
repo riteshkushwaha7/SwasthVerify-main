@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import Home from './components/Home'
 import AboutUs from './components/Aboutus'
 import ImageTextExtractor  from './components/imagetextextractor';
-
+import Chatbot from './components/chatbot';
 
 
 
@@ -23,7 +23,7 @@ function App() {
       <Route path="/about" element={<AboutUs/>}/>
     </Routes>
     </BrowserRouter>
-
+    <Chatbot/>
    
     
     

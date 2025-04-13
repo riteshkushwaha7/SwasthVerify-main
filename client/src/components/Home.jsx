@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import ImageTextExtractor from './imagetextextractor';
+import ReportGenerator from './ReportGenerator';
 
 function Home() {
   const [extractedText, setExtractedText] = useState('');
@@ -73,13 +74,14 @@ function Home() {
           />
         </section>
 
-        <div className="flex justify-center mb-6">
+        <div className="flex justify-evenly mb-6">
           <button
             onClick={handleSubmit}
             className="bg-purple-700 hover:bg-purple-800 text-white font-medium px-6 py-2 rounded-full shadow-md transition-transform transform hover:scale-105 duration-200"
           >
             Submit for Chemical Check
           </button>
+          <ReportGenerator extractedText={extractedText} responseMessage={responseMessage} harmfulChemicals={harmfulChemicals} />
         </div>
 
       
