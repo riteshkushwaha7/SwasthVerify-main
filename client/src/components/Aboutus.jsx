@@ -29,6 +29,13 @@ function Aboutus() {
               <li>
                 <span className="font-medium text-white">MongoDB:</span> Stores data about harmful chemicals for quick lookups.
               </li>
+              <li>
+                <span className="font-medium text-white">Gemini API:</span> Chat bot to tell users about harmful chemical, alternatives,side effects.
+              </li>
+
+              <li>
+                <span className="font-medium text-white">Jspdf:</span> To generate pdf report of the chemical detection.
+              </li>
             </ul>
           </div>
 

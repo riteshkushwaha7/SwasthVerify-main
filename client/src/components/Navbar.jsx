@@ -13,13 +13,13 @@ const Navbar = () => {
         <div className="space-x-6 text-base font-medium">
           <Link
             to="/"
-            className="text-purple-700 text-xl hover:text-blue-600 "
+            className="text-white-600 font-extrabold text-xl hover:text-blue-600 "
           >
              Home
           </Link>
           <Link
             to="/about"
-            className="text-purple-700 text-xl hover:text-blue-600 "
+            className="text-white-600 font-extrabold text-xl hover:text-blue-600 "
           >
              About Us
           </Link>
