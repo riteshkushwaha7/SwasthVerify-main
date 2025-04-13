@@ -16,7 +16,7 @@ function Chatbot() {
     try {
       setLoading(true);
       setResponse("");
-      const res = await axios.post("http://localhost:5000/api/ask", { prompt });
+      const res = await axios.post("https://swasthverify-1.onrender.com/api/ask", { prompt });
       setResponse(res.data.answer || "No response received.");
       if (res.data.harmfulChemicals?.length > 0) {
         setHarmfulChemicals(res.data.harmfulChemicals);

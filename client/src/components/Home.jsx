@@ -15,7 +15,7 @@ function Home() {
       .filter((word) => word.trim().length > 0);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/search-ingredients', {
+      const response = await axios.post('https://swasthverify-1.onrender.com/api/search-ingredients', {
         ingredients: words,
       });
 
